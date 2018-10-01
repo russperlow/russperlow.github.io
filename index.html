@@ -13,49 +13,56 @@
   <script src="https://unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
   <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
   <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-
+  <link type="text/css" rel="stylesheet" href="css/main.css"/>
 </head>
 
 <body>
-  <b-navbar toggleable="md" type="dark" variant="info">
-    <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-    <b-navbar-brand href="#">NavBar</b-navbar-brand>
+  <div id="root">
+    <b-navbar toggleable="md" type="dark" variant="dark">
+      <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
-    <b-collapse is-nav id="nav_collapse">
-      <b-navbar-nav>
-        <b-nav-item href="#">Link</b-nav-item>
-        <b-nav-item href="#" disabled>Disabled</b-nav-item>
-      </b-navbar-nav>
+      <!-- Image Logo -->
+      <b-navbar-brand href="#">      
+        <img src="img/MyLogo.png" width="50%" height="50%" class="d-inline-block align-top" alt="BV">
+      </b-navbar-brand>
 
-        <!-- Right aligned nav items -->
-        <b-navbar-nav class="ml-auto">
+      <b-collapse is-nav id="nav_collapse">
 
-            <b-nav-form>
-              <b-form-input size="sm" class="mr-sm-2" type="text" placeholder="Search"/>
-              <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
-            </b-nav-form>
+        <b-navbar-nav>
+          <b-nav-item href="#">Home</b-nav-item>
+          <b-nav-item href="#">Professional</b-nav-item>
+          <b-nav-item href="#">Experience</b-nav-item>
+          <b-nav-item href="#">Portfolio</b-nav-item>
+          <b-nav-item href="#">Contact</b-nav-item>
+
+        </b-navbar-nav>
+      </b-collapse>
+
+    </b-navbar>
+
+    <div id="home">
+      <h1>Russell Perlow</h1>
+      <h3>Game Designer and Developer</h3>
+      <img src="img/MyFaceLogo.png" width="20%" height="20%">
+
+      <div id="aboutMe">
+        <img src="img/MyLogo.png" width="10%" height="10%">
+        <p>I'm an undergrad student at Rochester Institute of Technology for a B.S. in Game Design and Development and a Minor in Mobile Development. I am actively seeking an internship in designing and developing games, apps, or software. I am also a proud and active brother of the Sigma Chi Fraternity.</p>
+        <button>Download Resume</button>
+      </div>
+
+    </div>
+
+    <div id="professional">
+      <h2>Professional</h2>
+      <h4>My Knowledge Level in Software</h4>
       
-            <b-nav-item-dropdown text="Lang" right>
-              <b-dropdown-item href="#">EN</b-dropdown-item>
-              <b-dropdown-item href="#">ES</b-dropdown-item>
-              <b-dropdown-item href="#">RU</b-dropdown-item>
-              <b-dropdown-item href="#">FA</b-dropdown-item>
-            </b-nav-item-dropdown>
-      
-            <b-nav-item-dropdown right>
-              <!-- Using button-content slot -->
-              <template slot="button-content">
-                <em>User</em>
-              </template>
-              <b-dropdown-item href="#">Profile</b-dropdown-item>
-              <b-dropdown-item href="#">Signout</b-dropdown-item>
-            </b-nav-item-dropdown>
-          </b-navbar-nav>
-    </b-collapse>
+      <div id="knowledgeLevels">
+        <knowledge-level-category v-bind:category="category" v-bind:subs="subs"></knowledge-level-category>
+      </div>
+    </div>
 
-  </b-navbar>
-
-  <h1>Russell Perlow</h1>
+  </div><!-- END ROOT -->
 
   <script src="js/main.js"></script>
 </body>

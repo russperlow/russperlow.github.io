@@ -1,0 +1,37 @@
+#home{
+    text-align: center;
+}
+#aboutMe{
+    border-style: solid;
+    border-width: 5px;
+    border-color: #00D646;
+    background: #343A40;
+    color: whitesmoke;
+}
+
+
+button{
+    background: #343A40;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #00D646;
+    color: whitesmoke;
+}
+button:hover{
+    background: #00D646;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #00D646;
+    color: whitesmoke;
+}
+.knowledge-level-title{
+    background:blue;
+}
+.knowledge-level-sub{
+    background:red;
+    width: 10%;
+    display: block;
+}
+.knowledge-level-div{
+    height: 10%;
+}
