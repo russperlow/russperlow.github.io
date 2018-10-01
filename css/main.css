@@ -29,9 +29,22 @@ button:hover{
 }
 .knowledge-level-sub{
     background:red;
-    width: 10%;
-    display: block;
+    width: 15%;
+    display: inline-block;
+    height: 5%;
+    margin-right: 1rem;
+}
+.knowledge-level-percent{
+    width: 15%;
+    display: inline-block;
+}
+.knowledge-level-rect{
+    display: inline-block;
+    vertical-align: middle;
 }
 .knowledge-level-div{
-    height: 10%;
+    height: 5%;
+    width:100%;
+    display: inline-block;
+    vertical-align: middle;
 }
