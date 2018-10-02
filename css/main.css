@@ -30,7 +30,7 @@ h1, h2, h3{
 }
 #home::after {
     content: "";
-    background: url("../img/keyboard.jpg");
+    background: url("../img/Backgrounds/keyboard-black.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,7 +63,7 @@ h1, h2, h3{
 }
 #professional::after{
     content: "";
-    background: url("../img/blank-business-black.png");
+    background: url("../img/Backgrounds/blank-business-black.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -82,7 +82,7 @@ h1, h2, h3{
 }
 #portfolio::after{
     content: "";
-    background: url("../img/mobilesketch-black.png");
+    background: url("../img/Backgrounds/mobilesketch-black.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -101,7 +101,7 @@ h1, h2, h3{
 }
 #experience::after{
     content: "";
-    background: url("../img/mountain-black.png");
+    background: url("../img/Backgrounds/mountain-black.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -120,7 +120,7 @@ h1, h2, h3{
 }
 #contact::after{
     content: "";
-    background: url("../img/smoke.jpg");
+    background: url("../img/Backgrounds/smoke-black.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
