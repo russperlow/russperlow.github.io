@@ -12,7 +12,14 @@
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="https://unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
   <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
-  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript">var submitted=false;</script>
+  <script type="text/javascript">
+  $('#gform').on('submit', function(e) {
+    $('#gform *').fadeOut(2000);
+    $('#gform').prepend('Your submission has been processed...');
+    });
+  </script>
   <link type="text/css" rel="stylesheet" href="css/main.css"/>
 </head>
 
@@ -124,9 +131,24 @@
     <!-- END EXPERIENCE -->
 
     <div id="contact" class="slide">
-      <h2>Contact</h2>
-      <p>rep4975@rit.edu<br>Tel: (516) 359-6088</p>
-
+      <h2 class="pageTitle">Contact</h2>
+      <div id="contactInfo">
+        <p>Email: rep4975@rit.edu<br>Tel: (516) 359-6088</p>
+      </div>
+      <div id="contactForm">
+        <form enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfq5CozYAxfXdbLzGTAv-Q2dpKQmkNDUez883w46z8d7yO-pQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true">
+          <h3>Contact Me:</h3>
+          <p class="formText">Name:</p>
+          <input type="text" name="entry.95894825" id="entry.95894825">
+          <p class="formText">E-Mail:</p>
+          <input type="text" name="entry.690720616" id="entry.690720616">
+          <p class="formText">Comment:</p>
+          <input type="text" name="entry.990685108" id="entry.990685108" size="50"><br>
+          <input type="submit" value="Submit" id="submitBtn">
+        </form>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+      </div>
+    
     </div>
     <!-- END CONTACT -->
 
