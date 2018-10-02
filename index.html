@@ -41,17 +41,18 @@
     </b-navbar>
 
     <div id="home" class="slide">
-      <h1>Russell Perlow</h1>
-      <h3>Game Designer and Developer</h3>
-      <img src="img/MyFaceLogo.png" width="20%" height="20%">
+      <h1 id="nameTitle">Russell Perlow</h1>
+      <h3 id="positionTitle">Game Designer and Developer</h3>
+      <img id="myFaceLogo" src="img/MyFaceLogo.png" width="20%" height="20%">
 
       <div id="aboutMe">
-        <img src="img/MyLogo.png" width="10%" height="10%">
+        <img src="img/MyLogo.png" id="myLogo" width="10%" height="10%">
         <p>I'm an undergrad student at Rochester Institute of Technology for a B.S. in Game Design and Development and a Minor in Mobile Development. I am actively seeking an internship in designing and developing games, apps, or software. I am also a proud and active brother of the Sigma Chi Fraternity.</p>
-        <button>Download Resume</button>
+        <button id="downloadResume" type="submit" onclick="window.open('pdf/Russell_Perlow_Resume.pdf')">My Resume</button>
       </div>
 
-    </div><!-- END HOME -->
+    </div>
+    <!-- END HOME -->
 
     <div id="professional" class="slide">
       <h2>Professional</h2>
@@ -63,7 +64,8 @@
         <knowledge-level-category v-bind:category="software" v-bind:subs="softwareSubs"></knowledge-level-category>
 
       </div>
-    </div><!-- END PROFESSIONAL -->
+    </div>
+    <!-- END PROFESSIONAL -->
 
     <div id="portfolio" class="slide">
       <h2>Portfolio</h2>
@@ -87,7 +89,8 @@
             <div class="text">Fast Mining</div>
           </div>
         </div>
-    </div><!-- END PORTFOLIO -->
+    </div>
+    <!-- END PORTFOLIO -->
 
     <div id="experience" class="slide">
       <h2>Experience</h2>
@@ -109,15 +112,18 @@
           <p class="experiencePosition">Software Engineer (CO-OP)</p>
           <p class="experienceContent">Create automating testing for Sigma Client for Android using Espresso. Developed Visual Voicemail feature and patched bugs for Sigma Client for Windows, Android and iOS, using Java Eclipse, Android Studio and xCode respestively</p>
       </div>
-    </div><!-- END EXPERIENCE -->
+    </div>
+    <!-- END EXPERIENCE -->
 
     <div id="contact" class="slide">
       <h2>Contact</h2>
       <p>rep4975@rit.edu<br>Tel: (516) 359-6088</p>
 
-    </div><!-- END CONTACT -->
+    </div>
+    <!-- END CONTACT -->
 
-  </div><!-- END ROOT -->
+  </div>
+  <!-- END ROOT -->
 
   <footer>© 2018 by Russell Perlow.</footer>
   <script src="js/main.js"></script>
