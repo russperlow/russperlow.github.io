@@ -1,0 +1,83 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+h1, h2, h3{
+    text-align: center;
+    color: whitesmoke;
+}
+body{
+    background-color: #343A40;
+}
+#images{
+    display: none;
+}
+.largePreview{
+    width: 50%;
+    margin-left: 25%;
+}
+.halfPreview{
+    width: 100%;
+    margin-left: 25%;
+    font-size: 0px;
+    display: inline-block;
+}
+.halfPreviewGif{
+    width: 25%;
+    height: 25%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#expanded {
+    display: table;
+    margin: 2%;
+    height:100%;
+}
+
+.cell {
+    vertical-align: top;
+    display: table-cell;
+    height: 100%;
+}
+#expandedImageCell{
+    width: 55%;
+}
+#expandedImage{
+    width: 90%;
+}
+#expandedTitle{
+    display: inline-block;
+    text-align: center;
+    margin: 5%;
+}
+#titleArea{
+    display: inline-block;
+    width: 100%;
+}
+.arrowBtn{
+    background: #343A40;
+    color: whitesmoke;
+    font-size: 2rem;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+    padding: .5% 3%;
+    text-align: center;
+    display: inline-block;
+}
+.arrowBtn:hover{
+    background: #00D646;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #00D646;
+    color: whitesmoke;
+    text-decoration: none;
+}
+#closeBtn{
+    right: 0;
+    margin-right: 0;
+    padding-right: 0;
+    margin-left: 10vw;
+    font-size: 1.5rem;
+    color: whitesmoke;
+}

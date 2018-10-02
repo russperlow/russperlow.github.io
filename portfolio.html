@@ -1,0 +1,80 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Russell Perlow</title>
+
+  <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"/>
+  <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
+  <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+  <link type="text/css" rel="stylesheet" href="css/portfolio.css"/>
+  <link type="text/css" rel="stylesheet" href="css/responsive.css"/>
+</head>
+
+<body>
+    <div id="root">
+    <b-navbar toggleable="md" type="dark" variant="dark">
+        <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
+  
+        <!-- Image Logo -->
+        <b-navbar-brand href="#">      
+          <img src="img/Logos/MyLogo2.png" width="50%" height="50%" class="d-inline-block align-top" alt="BV">
+        </b-navbar-brand>
+  
+        <b-collapse is-nav id="nav_collapse">
+  
+          <b-navbar-nav>
+            <b-nav-item href="index.html#homeJump">Home</b-nav-item>
+            <b-nav-item href="index.html#professional">Professional</b-nav-item>
+            <b-nav-item href="index.html#portfolio">Portfolio</b-nav-item>
+            <b-nav-item href="index.html#experience">Experience</b-nav-item>
+            <b-nav-item href="index.html#contact">Contact</b-nav-item>
+  
+          </b-navbar-nav>
+        </b-collapse>
+  
+      </b-navbar>
+      <!-- END NAVBAR -->
+      
+      <div id="portfolioPage">
+        <h1>Portfolio</h1>
+
+        <div id="images">
+            <img class="largePreview" src="img/Portfolio/HavocAndFortunePreview.gif">
+            <div class="halfPreview">
+                <img class="halfPreviewGif" src="img/Portfolio/FastMiningPreview.gif">
+                <img class="halfPreviewGif" src="img/Portfolio/NFLWonderlandPreview.gif">
+            </div>
+            <img class="largePreview" src="img/Portfolio/Tetris.png">
+        </div>
+
+        <div id="expanded">
+            <div class="cell" id="expandedImageCell">
+                <img id="expandedImage" src="img/Portfolio/HavocAndFortunePreview.gif">
+            </div>
+            <div class="cell" id="expandedText">
+                <div id="titleArea">
+                    <a href="#" class="arrowBtn" id="previous">&#8249;</a>
+                    <h2 id="expandedTitle">Havoc and Fortune</h2>
+                    <a href="#" class="arrowBtn" id="next">&#8250;</a>
+                    <a href="#" id="closeBtn">&#9587;</a>
+                </div>
+                <p id="expandedDescription">Description</p>
+            </div>
+        </div>
+      </div>
+
+
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+
+</html>
