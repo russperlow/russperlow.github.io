@@ -23,7 +23,7 @@ const projects = [
 let index = 0;
 
 var image = new Image();
-image.src = 'img/Portfolio/NFLWonderlandPreview.gif';
+image.src = 'img/Portfolio/HavocAndFortunePreview.gif';
 
 function updateExpanded(){
     $('#expandedImage').attr("src", projects[index].src);
