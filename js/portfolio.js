@@ -2,7 +2,7 @@ const projects = [
     {
         name: "Havoc and Fortune",
         description: "A rogue dungeon crawling game created for a group project in Microsoft XNA. Havoc and Fortune has multiple levels with increasing difficulties that present an exciting challenge for those who dare. Players who can overcome the difficult enemies may find weapons around the dungeon to add to their inventory and equip to try and make their fight for life a little more bearable. Best of luck for those strong enough to make it to the end, as they will fight the final boss and his bullet hell minions!",
-        src: "img/Portfolio/HavocAndFortunePreview.gif"
+        src: "img/Portfolio/HavocandFortunePreview.gif"
     },
     {
         name: "Fast Mining",
@@ -21,9 +21,6 @@ const projects = [
     }
 ];
 let index = 0;
-
-var image = new Image();
-image.src = 'img/Portfolio/HavocAndFortunePreview.gif';
 
 function updateExpanded(){
     $('#expandedImage').attr("src", projects[index].src);
