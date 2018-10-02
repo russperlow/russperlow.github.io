@@ -11,8 +11,8 @@ Vue.component('knowledge-level', {
 	props:['sub', 'percentage'],
 	template: `<div class="knowledge-level-div">
 					<b-card class="knowledge-level-sub">{{sub.name}}</b-card>
-					<svg class="knowledge-level-rect" width="60%" height="1%">
-						<rect :style="{width: sub.percentage + '%'}" y="40%" height="10%" style="fill:rgb(0,214,70); stroke-width:0; stroke:rgb(0,0,0)" />
+					<svg class="knowledge-level-rect" width="50%" height="15%">
+						<rect :style="{width: sub.percentage + '%'}" height="100%" style="fill:rgb(0,214,70); stroke-width:0; stroke:rgb(0,0,0)" />
 					  </svg>
 					  <b-card class="knowledge-level-percent">{{sub.percentage}}%</b-card>				
 				  </div>`
