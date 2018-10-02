@@ -22,6 +22,9 @@ const projects = [
 ];
 let index = 0;
 
+var image = new Image();
+image.src = 'img/Portfolio/NFLWonderlandPreview.gif';
+
 function updateExpanded(){
     $('#expandedImage').attr("src", projects[index].src);
     $('#expandedTitle').text(projects[index].name);
