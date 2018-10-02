@@ -30,9 +30,9 @@
 
         <b-navbar-nav>
           <b-nav-item href="#">Home</b-nav-item>
-          <b-nav-item href="#">Professional</b-nav-item>
-          <b-nav-item href="#">Experience</b-nav-item>
-          <b-nav-item href="#">Portfolio</b-nav-item>
+          <b-nav-item href="#professional">Professional</b-nav-item>
+          <b-nav-item href="#portfolio">Portfolio</b-nav-item>
+          <b-nav-item href="#experience">Experience</b-nav-item>
           <b-nav-item href="#">Contact</b-nav-item>
 
         </b-navbar-nav>
@@ -56,7 +56,7 @@
 
     <div id="professional" class="slide">
       <h2 class="pageTitle">Professional</h2>
-      <h4 id="secondaryTitle">My Knowledge Level in Software</h4>
+      <h4 class="secondaryTitle">My Knowledge Level in Software</h4>
       
       <div id="knowledgeLevels">
         <knowledge-level-category v-bind:category="languages" v-bind:subs="languageSubs"></knowledge-level-category>
@@ -68,25 +68,25 @@
     <!-- END PROFESSIONAL -->
 
     <div id="portfolio" class="slide">
-      <h2>Portfolio</h2>
-      <h4>My Latest Work <a href="#">See More ></a></h4>
+      <h2 class="pageTitle">Portfolio</h2>
+      <h4 class="secondaryTitle">My Latest Work. <a href="#" id="seeMore">See More ></a></h4>
 
       <div class="imgContainer">
         <img src="img/NFLWonderland.png" class="mainpageImg">
         <div class="middle">
-          <div class="text">NFL Wonderland</div>
+          <div class="text">NFL Zombie Wonderland was a group project designed in Microsoft XNA. It is a side scrolling zombie game including two bosses throughout. The game includes an inventory of weapons for the player to choose from, a selection of NFL players to play as and access to an external character creation tool so players can play as themselves!</div>
         </div>
       </div>
       <div class="imgContainer">
         <img src="img/havocandfortune.png" class="mainpageImg">
         <div class="middle">
-          <div class="text">Havoc and Fortune</div>
+          <div class="text">A rogue dungeon crawling game created for a group project in Microsoft XNA. Havoc and Fortune has multiple levels with increasing difficulties that present an exciting challenge for those who dare. Players who can overcome the difficult enemies may find weapons around the dungeon to add to their inventory and equip to try and make their fight for life a little more bearable. Best of luck for those strong enough to make it to the end, as they will fight the final boss and his bullet hell minions!</div>
         </div>
       </div>
       <div class="imgContainer">
           <img src="img/fastmining.png" class="mainpageImg">
           <div class="middle">
-            <div class="text">Fast Mining</div>
+            <div class="text">Fast Mining is a solo project created using Microsoft XNA and Xamarin studios for mobile platforms. Fast Mining is a clicker game in which the player levels up and earns money by mining different ores. The further along the player gets, the more expensive and rare ores they can mine. Players can use their in game money to help them advance with bonuses that increase experience points or a drill that mines for them. Players can also use real world currency to unlock special pickaxes for aide!</div>
           </div>
         </div>
     </div>
