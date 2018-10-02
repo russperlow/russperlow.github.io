@@ -6,8 +6,18 @@ const projects = [
     },
     {
         name: "Fast Mining",
-        description: "Description of Fast Mining",
+        description: "Fast Mining is a solo project created using Microsoft XNA and Xamarin studios for mobile platforms. Fast Mining is a clicker game in which the player levels up and earns money by mining different ores. The further along the player gets, the more expensive and rare ores they can mine. Players can use their in game money to help them advance with bonuses that increase experience points or a drill that mines for them. Players can also use real world currency to unlock special pickaxes for aide!",
         src: "img/Portfolio/FastMiningPreview.gif"
+    },
+    {
+        name: "NFL Zombie Wonderland",
+        description: "NFL Zombie Wonderland was a group project designed in Microsoft XNA. It is a side scrolling zombie game including two bosses throughout. The game includes an inventory of weapons for the player to choose from, a selection of NFL players to play as and access to an external character creation tool so players can play as themselves!",
+        src: "img/Portfolio/NFLWonderlandPreview.gif"
+    },
+    {
+        name: "Tetris",
+        description: "Written in JavaScript, this version of Tetris comes with a fun holiday twist! The higher you score the more excited Santa becomes with a new celebration every 1000 points!",
+        src: "img/Portfolio/Tetris.png"
     }
 ];
 let index = 0;
@@ -19,6 +29,14 @@ function updateExpanded(){
 }
 
 (function(){
+
+    $('.imageGif').click(function(){
+        let $image = $(this);
+        index = $image.data('foo');
+        $('#expanded').show();
+        $('#images').hide();
+        updateExpanded();
+    });
 
     // Update information to next project in array
     $('#next').click(function(){
@@ -42,6 +60,7 @@ function updateExpanded(){
         updateExpanded();
     });
 
+    // Close expanded view 
     $('#closeBtn').click(function(){
         index = 0;
         $('#expanded').hide();
