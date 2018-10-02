@@ -422,3 +422,15 @@ h1, h2, h3{
     color:whitesmoke;
     margin-bottom: 2vw;
 }
+
+footer{
+    text-align: center;
+    padding: 1%;
+    background: #343A40;
+    color:rgba(245, 245, 245, 0.7);
+}
+#footerImg{
+    width: 2.5%;
+    height: 2.5%;
+    margin-right: 20px;
+}
