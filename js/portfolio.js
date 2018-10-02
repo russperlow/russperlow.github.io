@@ -29,6 +29,7 @@ function updateExpanded(){
 }
 
 (function(){
+    $('#expanded').hide();
 
     $('.imageGif').click(function(){
         let $image = $(this);

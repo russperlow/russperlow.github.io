@@ -2,12 +2,25 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+body{
+    background-image: linear-gradient(to right, rgba(52, 58, 64, 1),rgba(52, 58, 64, 0.95),rgba(52, 58, 64, 0.90), rgba(52, 58, 64, 0.95),rgba(52, 58, 64, 1)); 
+}
+.navbar-custom{
+    background-color: rgba(30, 32, 34, 0.5);
+}
+a.nav-link{
+    color: rgba(245, 245, 245, 0.7);
+}
+#navBar{
+    -webkit-box-shadow: 0px 0px 68px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 68px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 68px 2px rgba(0,0,0,0.75);
+    margin: 2%;
+}
 h1, h2, h3{
     text-align: center;
     color: whitesmoke;
-}
-body{
-    background-color: #343A40;
+    margin-bottom: 5%;
 }
 .largePreview{
     width: 50%;
@@ -27,7 +40,6 @@ body{
 }
 
 #expanded {
-    display: none;
     display: table;
     margin: 2%;
     height:100%;
@@ -57,7 +69,7 @@ body{
     width: 100%;
 }
 .arrowBtn{
-    background: #343A40;
+    background: rgb(52, 58, 64);
     color: whitesmoke;
     font-size: 2rem;
     margin-top: 2vw;
@@ -82,4 +94,17 @@ body{
     font-size: 1.5rem;
     color: whitesmoke;
     position: absolute;
+}
+footer{
+    text-align: center;
+    padding: 1%;
+    background: #343A40;
+    color:rgba(245, 245, 245, 0.7);
+    box-shadow: 0px 0px 10px rgba(30, 32, 34, 0.7);
+    margin-top: 2%;
+}
+#footerImg{
+    width: 2.5%;
+    height: 2.5%;
+    margin-right: 20px;
 }
