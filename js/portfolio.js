@@ -35,15 +35,30 @@ function updateExpanded(){
 
 (function(){
     $('#expanded').hide();
+    $('#hnfPreview').hide();
+    $('#fmPreview').hide();
+    $('#nflPreview').hide();
+    $('#tetrisPreview').hide();
+
+    $('.previewGif').click(function(){
+        let $preview = $(this);
+        index = $preview.data('foo');
+        let image = $preview.data('image');
+        $preview.hide();
+        $(image).show();
+        $('#expanded').show();
+        //$('#images').hide();
+        //$image.attr("src", projects[index].image);
+
+        updateExpanded();
+    });
 
     $('.imageGif').click(function(){
         let $image = $(this);
         index = $image.data('foo');
         $('#expanded').show();
-        //$('#images').hide();
-        $image.attr("src", projects[index].image);
         updateExpanded();
-    });
+    })
 
     // On Hover show the gif as a preview if nothing is expanded
     $('.imageGif').hover(function(){
@@ -51,15 +66,20 @@ function updateExpanded(){
         if(($("#expanded").is(":visible")))
             return;
         let $image = $(this);
-        index = $image.data('foo');
-        $image.attr("src", projects[index].preview);
+        //index = $image.data('foo');
+        let preview = $image.data('preview');
+        $image.hide();
+        $(preview).show();
     })
 
     // On mouse leave go back to the image
-    $('.imageGif').mouseleave(function(){
-        let $image = $(this);
-        index = $image.data('foo');
-        $image.attr("src", projects[index].image);
+    $('.previewGif').mouseleave(function(){
+        let $preview = $(this);
+        //index = $preview.data('foo');
+        //$image.attr("src", projects[index].image);
+        let image = $preview.data('image');
+        $(image).show();
+        $preview.hide();
     })
 
     // Update information to next project in array
