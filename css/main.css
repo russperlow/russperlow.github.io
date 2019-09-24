@@ -167,7 +167,7 @@ a.nav-link{
     height: 15%;
 }
 
-#submitBtn, button{
+#submitBtn, #downloadResume{
     background: #343A40;
     border-style: solid;
     border-width: 1px;
@@ -178,14 +178,14 @@ a.nav-link{
     margin-bottom: 1vw;
     padding: 2% 3%;
 }
-#submitBtn:hover, button:hover{
+#submitBtn:hover, #downloadResume:hover{
     background: #00D646;
     border-style: solid;
     border-width: 1px;
     border-color: #00D646;
     color: whitesmoke;
+    text-decoration: none;
 }
-
 .knowledge-level-category{
     background: rgba(0, 0, 0, 0);
 }
