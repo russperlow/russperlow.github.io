@@ -38,7 +38,11 @@ const app = new Vue({
 			{name: 'Java', percentage: '95'},
 			{name: 'HTML & CSS', percentage: '95'},
 			{name: 'JavaScript', percentage: '95'},
-			{name: 'C++', percentage:'85'}
+			{name: 'C++', percentage:'75'},
+			{name: 'Swift', percentage: '75'},
+			{name: 'Python', percentage: '75'},
+			{name: 'SQL', percentage: '65'}
+
 		],
 		devTools: 'Developer Tools',
 		devToolSubs: [
