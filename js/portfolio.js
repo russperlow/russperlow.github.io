@@ -23,7 +23,17 @@ const projects = [
         description: "Written in JavaScript, this version of Tetris comes with a fun holiday twist! The higher you score the more excited Santa becomes with a new celebration every 1000 points!",
         preview: "img/Portfolio/Tetris.png",
         image: "img/Portfolio/Tetris.png"
-    }
+    },{
+        name: "Meal Maker",
+        description: "Written using Node.JS, React and Handlebars. This website is designed for users to be able to track their meals throughout the day and keep accurate records for weeks, months or years.",
+        preview: "img/Portfolio/MealMaker.png",
+        image: "img/Portfolio/MealMaker.png"
+    },{
+        name: "OSRS Assistant",
+        description: "Written using JavaScript and the D3 Library, with data pulled from the Old School RuneScape API. This website is designed to help the average Old School RuneScape (OSRS) player track in game market trends and caculalte their luck on specific drops. All item prices are pulled directly from the OSRS Grand Exchange API to reflect accurate in game items. All Boss Lookup's are pulled from the official OSRS Hiscores API to be as accurate to in game kill counts as possible.",
+        preview: "img/Portfolio/OsrsAssistantPreview.gif",
+        image: "img/Portolio/OsrsAssistant.png"
+    },
 ];
 let index = 0;
 
@@ -39,6 +49,8 @@ function updateExpanded(){
     $('#fmPreview').hide();
     $('#nflPreview').hide();
     $('#tetrisPreview').hide();
+    $('#mealMakerPreview').hide();
+    $('#osrsAssistantPreview').hide();
 
     $('.previewGif').click(function(){
         let $preview = $(this);
