@@ -429,6 +429,9 @@ a.nav-link{
     color: whitesmoke;
     size: 1.1rem;
 }
+.formInput{
+    width: 50%;
+}
 #submitBtn{
     margin-top: 5%;
 }
