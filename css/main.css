@@ -455,3 +455,23 @@ footer{
     height: 2.5%;
     margin-right: 20px;
 }
+.leftMoveInStart {
+    -webkit-animation: leftMovingIn 2s ease-out;
+    animation: leftMovingIn 2s ease-out;
+}
+@keyframes leftMovingIn {
+    from {transform: translateX(-1000px);}
+    to {transform: translateX(0px);}
+}
+.rightMoveInStart{
+    -webkit-animation: rightMovingIn 2s ease-out;
+    animation: rightMovingIn 2s ease-out;
+}
+
+@keyframes rightMovingIn{
+    from {transform: translateX(1000px);}
+    to {transform: translateX(0px);}
+}
+.invisible{
+    visibility: hidden;
+}
