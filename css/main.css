@@ -41,7 +41,6 @@ a.nav-link{
     margin-bottom: 2.5%;
 }
 
-
 #home{
     text-align: center;
     padding-top: 10px;
@@ -167,7 +166,7 @@ a.nav-link{
     height: 15%;
 }
 
-#submitBtn, #downloadResume{
+#submitBtn, #downloadResume, #githubLink{
     background: #343A40;
     border-style: solid;
     border-width: 1px;
@@ -178,7 +177,7 @@ a.nav-link{
     margin-bottom: 1vw;
     padding: 2% 3%;
 }
-#submitBtn:hover, #downloadResume:hover{
+#submitBtn:hover, #downloadResume:hover, #githubLink:hover{
     background: #00D646;
     border-style: solid;
     border-width: 1px;

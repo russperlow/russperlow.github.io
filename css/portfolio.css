@@ -22,18 +22,7 @@ h1, h2, h3{
     color: whitesmoke;
     margin-bottom: 1.5%;
 }
-#githubLinkDiv{
-    text-align: center;
-    margin-bottom: 2%;
-}
-#githubLink{
-    font-size: 1.3rem;
-    color:rgba(235, 235, 235, .9);
-    text-align: center;
-}
-#githubLink:hover{
 
-}
 .largePreview{
     width: 50%;
     margin-left: 25%;
