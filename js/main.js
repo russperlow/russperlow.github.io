@@ -29,24 +29,50 @@ Vue.component('knowledge-level-category', {
 				</div>`
 });
 
+Vue.component('work-experience', {
+	props: ['job', 'index'],
+	template: `
+		<div class="container right" v-if="index % 2 == 1">
+			<div class="content">
+				<p class="timePeriodRight rightMoveIn invisible">{{job.timePeriod}}</p>
+				<p class="companyRight rightMoveIn invisible">{{job.company}}</p>
+				<p class="positionRight rightMoveIn invisible">{{job.position}}</p>
+				<p class="contentRight rightMoveIn invisible">{{job.content}}</p>
+			</div>
+		</div>
+		<div class="container left" v-else>
+			<div class="content">
+				<p class="timePeriodLeft leftMoveIn invisible">{{job.timePeriod}}</p>
+				<p class="companyLeft leftMoveIn invisible">{{job.company}}</p>
+				<p class="positionLeft leftMoveIn invisible">{{job.position}}</p>
+				<p class="contentLeft leftMoveIn invisible">{{job.content}}</p>
+			</div>
+		</div>
+	`
+});
+
 const app = new Vue({
 	el: '#root',
 	data: {
-		languages: 'Languages',
+		languages: 'Languages & Extensions',
 		languageSubs: [
 			{name: 'JavaScript', percentage: '95'},
 			{name: 'HTML & CSS', percentage: '95'},
+			{name: 'Node.js', percentage: '95'},
 			{name: 'C#', percentage: '95'},
 			{name: 'Java', percentage: '95'},
+			{name: 'Python', percentage: '95'},
+			{name: 'Flask', percentage: '95'},
 			{name: 'SQL', percentage: '75'},
 			{name: 'Swift', percentage: '75'},
 			{name: 'Kotlin', percentage: '75'},
 			{name: 'C++', percentage:'75'},
-			{name: 'Python', percentage: '75'},
 		],
 		devTools: 'Developer Tools',
 		devToolSubs: [
 			{name: 'Visual Studio', percentage: '95'},
+			{name: 'Visual Studio Code', percentage: '95'},
+			{name: 'IntelliJ', percentage: '95'},
 			{name: 'Android Studio', percentage: '95'},
 			{name: 'MonoGame & XNA', percentage: '95'},
 			{name: 'Unity 4.0 & 5.0', percentage: '85'},
@@ -55,10 +81,51 @@ const app = new Vue({
 		],
 		software: 'Software',
 		softwareSubs: [
+			{name: 'Microsoft PowerPoint', percentage: '95'},
+			{name: 'Microsoft Excel', percentage: '95'},
+			{name: 'Azure DevOps', percentage: '90'},
 			{name: 'Adobe Photoshop', percentage: '90'},
 			{name: 'SharePoint', percentage: '75'},
 			{name: 'Adobe After Effects', percentage: '75'}
-		]
+		],
+		jobs: [
+			{
+				timePeriod: 'November 2021 - Present',
+				company: 'Wingbrace',
+				position: 'Scrum Master',
+				content: 'Scrum Master of single Agile Development team. Leader of Daily Stand-up, Retrospectives, Bi-Weekly Sprint Reviews & Presentations, and Sprint Planning (Poker-Based). Continued team and sprint metrics tracking. '
+			},
+			{
+				timePeriod: 'June 2020 - Present',
+				company: 'Wingbrace',
+				position: 'Software Engineer',
+				content: 'Working in an Agile Development Enviornment on Models Based System Engineering. Creating and modifying models and simulations in an array of enviorments based on the given clients needs. Bringing to our clients the most optimized, comprehensible and tailored cloud architecture and data analytics.'
+			},
+			{
+				timePeriod: 'January 2019 - August 2019',
+				company: 'Wegmans Food Markets',
+				position: 'Web Developer (CO-OP',
+				content: 'Designed and developed End to End Applications for multiple projects in SharePoint, utilizing K2, HTML, JavaScript, CSS, and JQuery. Gathered requirements and led discovery meetings for each project. Implemented updates to existing sites and helped test in-progress work.',
+			},
+			{
+				timePeriod: 'May 2017 - December 2017',
+				company: 'REDCOM Labs',
+				position: 'Software Engineer (CO-OP)',
+				content: 'Create automating testing for Sigma Client for Android using Espresso. Developed Visual Voicemail feature and patched bugs for Sigma Client for Windows, Android and iOS, using Java Eclipse, Android Studio and xCode respestively.',
+			},
+			{
+				timePeriod: 'August 2017 - December 2017',
+				company: 'RIT Interactive Games and Media',
+				position: 'Teaching Assistant',
+				content: 'Teach and tutor students in Visual Studio 2015, C#, Microsoft XNA, and Git. Grade exercises, homework, projects, exams and presentations.',
+			},
+			{
+				timePeriod: 'August 2016 - December 2018',
+				company: 'RIT Interactive Games and Media',
+				position: 'Lab Assistant',
+				content: 'Tutor students in Visual Studio 2017, C#, C++, JavaScript, Html/CSS, Microsoft XNA, Unity 5.0, Photoshop, and Unix. Assist in the replacement, repairing and addition of lab equipment.',
+			},
+		],
 
 	}
 });

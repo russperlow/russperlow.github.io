@@ -81,7 +81,6 @@
         <knowledge-level-category v-bind:category="languages" v-bind:subs="languageSubs"></knowledge-level-category>
         <knowledge-level-category v-bind:category="devTools" v-bind:subs="devToolSubs"></knowledge-level-category>
         <knowledge-level-category v-bind:category="software" v-bind:subs="softwareSubs"></knowledge-level-category>
-
       </div>
     </div>
     <!-- END PROFESSIONAL -->
@@ -113,47 +112,8 @@
 
     <div id="experience" class="slide">
       <h2 class="pageTitle">Experience</h2>
-      <div class="timeline">        
-        <div class="container left">
-          <div class="content">
-            <p class="timePeriodLeft leftMoveIn invisible">June 2020 - Present</p>
-            <p class="companyLeft leftMoveIn invisible">Wingbrace</p>
-            <p class="positionLeft leftMoveIn invisible">Software Engineer</p>
-            <p class="contentLeft leftMoveIn invisible">Working in an Agile Development Enviornment on Models Based System Engineering. Creating and modifying models and simulations in an array of enviorments based on the given clients needs. Bringing to our clients the most optimized, comprehensible and tailored cloud architecture and data analytics.</p>
-          </div>
-        </div>
-        <div class="container right">
-          <div class="content">
-            <p class="timePeriodRight rightMoveIn invisible">January 2019 - August 2019</p>
-            <p class="companyRight rightMoveIn invisible">Wegmans Food Markets</p>
-            <p class="positionRight rightMoveIn invisible">Web Developer (CO-OP)</p>
-            <p class="contentRight rightMoveIn invisible">Designed and developed End to End Applications for multiple projects in SharePoint, utilizing K2, HTML, JavaScript, CSS, and JQuery. Gathered requirements and led discovery meetings for each project. Implemented updates to existing sites and helped test in-progress work. </p>
-          </div>
-        </div>
-        <div class="container left">
-          <div class="content">
-            <p class="timePeriodLeft leftMoveIn invisible">May 2017 - December 2017</p>
-            <p class="companyLeft leftMoveIn invisible">REDCOM Labs</p>
-            <p class="positionLeft leftMoveIn invisible">Software Engineer (CO-OP)</p>
-            <p class="contentLeft leftMoveIn invisible">Create automating testing for Sigma Client for Android using Espresso. Developed Visual Voicemail feature and patched bugs for Sigma Client for Windows, Android and iOS, using Java Eclipse, Android Studio and xCode respestively.</p>
-          </div>
-        </div>
-        <div class="container right">
-          <div class="content">
-            <p class="timePeriodRight rightMoveIn invisible">August 2017 - December 2017</p>
-            <p class="companyRight rightMoveIn invisible">RIT Interactive Games and Media</p>
-            <p class="positionRight rightMoveIn invisible">Teaching Assistant</p>
-            <p class="contentRight rightMoveIn invisible">Teach and tutor students in Visual Studio 2015, C#, Microsoft XNA, and Git. Grade exercises, homework, projects, exams and presentations.</p>
-          </div>
-        </div>
-        <div class="container left">
-          <div class="content">
-            <p class="timePeriodLeft leftMoveIn invisible">August 2016 - December 2018</p>
-            <p class="companyLeft leftMoveIn invisible">RIT Interactive Games and Media</p>
-            <p class="positionLeft leftMoveIn invisible">Lab Assistant</p>
-            <p class="contentLeft leftMoveIn invisible">Tutor students in Visual Studio 2017, C#, C++, JavaScript, Html/CSS, Microsoft XNA, Unity 5.0, Photoshop, and Unix. Assist in the replacement, repairing and addition of lab equipment.</p>
-          </div>
-        </div>
+      <div class="timeline">      
+        <work-experience v-for="(job, index) in jobs" :key="index" :job="job" :index="index"></work-experience>  
       </div>
     </div>
     <!-- END EXPERIENCE -->
