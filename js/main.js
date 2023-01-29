@@ -93,7 +93,7 @@ const app = new Vue({
 				timePeriod: 'November 2021 - Present',
 				company: 'Wingbrace',
 				position: 'Scrum Master',
-				content: 'Scrum Master of single Agile Development team. Leader of Daily Stand-up, Retrospectives, Bi-Weekly Sprint Reviews & Presentations, and Sprint Planning (Poker-Based). Continued team and sprint metrics tracking. '
+				content: 'Scrum Master of single Agile Development team. Leader of Daily Stand-up, Retrospectives, Bi-Weekly Sprint Reviews & Presentations, Backlog Refinment & Prioritization and Sprint Planning (Agile Poker-Based). Continued team and sprint metrics tracking. '
 			},
 			{
 				timePeriod: 'June 2020 - Present',
